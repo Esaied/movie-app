@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/film_6831660.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie App</title>
+</head>
+<body>
+<div id="loader">
+    <div class="loader"></div> 
+</div>
+    <nav id="sideNav" class="d-flex justify-content-between vh-100 w-25 position-fixed z-2">
+        <div class="left-menu" id="leftMenu">
+            <div class="sidebar d-flex flex-column justify-content-between h-100 w-100">
+            <div class="mt-3 mb-5">
+                <ul>
+                    <li id="playing"class="my-3"><button class="btn">Now Playing</button></li>
+                    <li id="popular" class="my-3"><button class="btn">popular</button></li>
+                    <li id="top" class="my-3"><button class="btn">Top rated</button></li>
+                    <li id="trending" class="my-3"><button class="btn">Trending</button></li>
+                    <li id="upcoming" class="my-3"><button class="btn">Upcoming</button></li>
+                    <li id="contact" class="my-3"><a class="btn" href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="d-block p-4 mt-5 text-white">
+                <div class="icons my-3">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="copyright">
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="navHead" class="d-flex flex-column justify-content-between align-items-center p-3 w-25">
+            <div class="icon">
+                <img src="img/film_6831660.png" class="w-100" alt="film-icon">
+            </div>
+            <div id="navBtn" class="xmark cursor-pointer">
+                <i id="navIcon" class="fa-solid fa-bars fs-1"></i>
+            </div>
+            <div class="share">
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes d-block"></i>
+            </div>
+        </div>
+    </nav>
+
+<!-- home section -->
+    <section id="home">
+        <h1 class="text-center py-3 text-white">Movie App</h1>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <input id="searchInput" type="text" placeholder="Search..." class="w-50 ">
+            </div>
+        </div>
+        <div  id="movieSection" class="container row m-auto g-4">
+            
+        </div>
+    </section>
+
+    <!-- contact us section -->
+    <section id="contactUs" class="my-3">
+        <div class="container row m-auto">
+            <h2 class="m-auto">Contact Us</h2>
+            <div class="col-md-6">
+                <input id="name" type="text" class="w-100 form-input m-2" placeholder="Enter Your Name">
+            </div>
+            <div class="col-md-6">
+                <input id="email" type="email" class="w-100 form-input m-2" placeholder="Enter Your E-mail">
+                <span id="emialMsg" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <input id="phone" type="text" class="w-100 form-input m-2" placeholder="Enter Your Phone">
+                <span id="phoneMsg" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <input id="age" type="number" class="w-100 form-input m-2" placeholder="Enter Your Age">
+                <span id="ageMsg" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 position-relative">
+                <input id="password" type="password" class="w-100 form-input m-2" placeholder="Enter Your Password">
+                <!-- <i id="showPassword" class="fa-solid fa-eye-slash showpass"></i> -->
+                <span id="passMsg" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 position-relative">
+                <input id="rePassword" type="password" class="w-100 form-input m-2" placeholder="Re-enter Your Password">
+                <!-- <i class="fa-solid fa-eye-slash showpass"></i> -->
+                <span id="repassMsg" class="text-danger"></span>
+            </div>
+            <button id="submitBtn" type="submit" class="btn btn-danger">Submit</button>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
